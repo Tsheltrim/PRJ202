@@ -53,11 +53,10 @@ When you're ready to make this README your own, just edit this file and use the 
 Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
 
 ## Name
-Choose a self-explaining name for your project.
+Brain Tumor Classification using Machine learning
 
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
+Brain tumors are a significant health concern worldwide, emphasizing the importance of early detection. While medical imaging methods(MRI and CT scans) offer diagnostic insights, their interpretation can be subjective and time-consuming leading to varying accuracy levels among healthcare professionals. To address this, advanced technology combining image processing, artificial intelligence, and machine learning is essential for creating automated systems that accurately detect and classify cancerous lesions in medical images of the brain.
 ## Badges
 On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
 
@@ -68,13 +67,24 @@ Depending on what you are making, it can be a good idea to include screenshots o
 Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+You should install the following libraries;
+pip install flask
+pip instal pillow
+pip install numpy, pandas, matplotlib
+pip install tensorflow keras
+
+You should import the following libraries; 
+from tensorflow.keras.applications import VGG16
+from tensorflow.keras.models import Model, Sequential
+from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 ## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+if you have any questions on the reach out to this email 12220079.gcit@rub.edu.bt
 
 ## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+For now the project is based on only classification, but it can be developed as detection where it will tell you stages and type of Brain Tumor.
 
 ## Contributing
 State if you are open to contributions and what your requirements are for accepting them.
@@ -87,7 +97,7 @@ You can also document commands to lint the code or run tests. These steps help t
 Show your appreciation to those who have contributed to the project.
 
 ## License
-For open source projects, say how it is licensed.
+Everyone is free to use this source code.
 
 ## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+This project is a group project and is deployed in onrender.com
